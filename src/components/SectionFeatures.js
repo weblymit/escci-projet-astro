@@ -19,8 +19,9 @@ export default function SectionFeatures() {
 			</div>
 			<div className='px-20 pb-12'>
 				<div className='grid grid-cols-2 gap-y-8'>
-					{dataCards.map((item) => (
+					{dataCards.map((item, index) => (
 						<CardFeature
+							key={index}
 							icon={item.icon}
 							title={item.title}
 							description={item.description}
